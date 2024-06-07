@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 52</title>
+</head>
+<body>
+    <script>
+        imie = prompt("Podaj imię:");
+    nazwisko = prompt("Podaj nazwisko:");
+       a_bar = (nazwisko.length % 4) + 5;
+    b_bar = (imie.length % 6) + 20;
+         document.write(a_bar); 
+		    document.write("<br>");
+		 document.write(b_bar); 
+        document.write("<pre>"); 
+        // Górna krawędź
+        for (var i = 0; i < b_bar + 2; i++) {
+            document.write("*");
+        }
+        document.write("<br>");
+
+        // Środek
+        for (var i = 0; i < a_bar; i++) {
+            document.write("*");
+            for (var j = 0; j < b_bar; j++) {
+                document.write(" ");
+            }
+            document.write("*<br>");
+        }
+
+        // Dolna krawędź
+        for (var i = 0; i < b_bar + 2; i++) {
+            document.write("*");
+        }
+        document.write("<br>");
+        document.write("</pre>");
+    </script>
+</body>
+</html>
+
+ 

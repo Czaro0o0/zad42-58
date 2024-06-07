@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Obliczanie silni w sposób iteracyjny</title>
+</head>
+<body>
+  <h1>Obliczanie silni w sposób iteracyjny</h1>
+  <input id="c_bar" type="number" value="6">
+  <button onclick="calculateFactorial()">Oblicz silnie</button>
+  <p id="result"></p>
+
+  <script>
+    function calculateFactorial() {
+      let c_bar = document.getElementById("c_bar").value;
+      let silnia_bar = 1;
+
+      if (c_bar == 0) {
+        silnia_bar = 1;
+      } else {
+        for (let i = 1; i <= c_bar; i++) {
+          silnia_bar *= i;
+        }
+      }
+
+      document.getElementById("result").innerHTML = `${c_bar}! = ${silnia_bar}`;
+    }
+  </script>
+</body>
+</html>
